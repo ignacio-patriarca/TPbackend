@@ -21,5 +21,9 @@ public class Marca {
 
     @OneToMany(mappedBy = "marca")
     private List<Modelo> modelos;
-    
+
+    public Marca(int id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
 }

@@ -29,5 +29,10 @@ public class Vehiculo {
     @OneToMany(mappedBy = "vehiculo")
     private List<Prueba> pruebas;
 
+    public Vehiculo(int id, String patente) {
+        this.id = id;
+        this.patente = patente;
+        this.modelo = null;
+    }
 
 }

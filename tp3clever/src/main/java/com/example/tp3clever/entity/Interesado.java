@@ -37,4 +37,11 @@ public class Interesado {
 
     @Column(name = "FECHA_VENCIMIENTO_LICENCIA", nullable = false)
     private LocalDateTime fechaVencimientoLicencia;
+
+    public Interesado(int id, String documento, String nombre, String apellido) {
+        this.id = id;
+        this.documento = documento;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
 }

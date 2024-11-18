@@ -22,4 +22,10 @@ public class Empleado {
     @Column(name = "TELEFONO_CONTACTO", nullable = false)
     private Long telefonoContacto;
 
+    public Empleado(int legajo, String nombre, String apellido) {
+        this.legajo = legajo;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.telefonoContacto = Long.valueOf(1234);
+    }
 }

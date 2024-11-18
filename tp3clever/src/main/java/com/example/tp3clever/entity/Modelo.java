@@ -24,4 +24,9 @@ public class Modelo {
     @Column(name = "DESCRIPCION", nullable = false, length = 100)
     private String descripcion;
 
+    public Modelo(int id, String descripcion) {
+        this.id = id;
+        this.descripcion = descripcion;
+        this.marca = null;
+    }
 }

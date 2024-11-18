@@ -23,11 +23,17 @@ public class Posicion {
     private Vehiculo vehiculo;
 
     @Column(name = "FECHA_HORA", nullable = false)
-    private LocalDateTime fechaHora;
+    private String fechaHora;
 
     @Column(name = "LATITUD", nullable = false, precision = 10, scale = 8)
     private BigDecimal latitud;
 
     @Column(name = "LONGITUD", nullable = false, precision = 11, scale = 8)
     private BigDecimal longitud;
+
+    public Posicion(int idPosicion, String fechaHora) {
+        this.id = id;
+        this.fechaHora = fechaHora;
+        this.vehiculo = null;
+    }
 }
